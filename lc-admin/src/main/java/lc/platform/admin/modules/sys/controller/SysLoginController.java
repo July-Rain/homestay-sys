@@ -50,7 +50,7 @@ public class SysLoginController {
 //		if(!captcha.equalsIgnoreCase(kaptcha)){
 //			return Result.error("验证码不正确");
 //		}
-		
+
 		try{
 			Subject subject = ShiroUtils.getSubject();
 			UsernamePasswordToken token = new UsernamePasswordToken(username, password);
