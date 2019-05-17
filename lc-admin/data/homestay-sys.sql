@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50544
 File Encoding         : 65001
 
-Date: 2019-03-27 22:45:28
+Date: 2019-05-17 21:44:44
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3578,8 +3578,8 @@ CREATE TABLE `sys_book` (
 INSERT INTO `sys_book` VALUES ('1078914887078985730', '测试', '123123', '123', null, '123', null, null, null);
 INSERT INTO `sys_book` VALUES ('1078920410113298433', '特色他', '12', '1001', null, null, '2018-12-25 00:00:00', null, '2018-12-29 07:47:26');
 INSERT INTO `sys_book` VALUES ('1078920932035710978', '112', '2112', '1001', null, '1221', '2018-12-26 00:00:00', null, '2018-12-29 07:49:30');
-INSERT INTO `sys_book` VALUES ('1080474749346930689', 'wumengyu', '123', '1001', null, '123', '2019-01-18 00:00:00', null, '2019-01-02 14:43:49');
-INSERT INTO `sys_book` VALUES ('1081820615051821058', 'wumengyu', '123', '1001', null, '31232', '2019-01-19 00:00:00', null, '2019-01-06 07:51:49');
+INSERT INTO `sys_book` VALUES ('1080474749346930689', 'sisi', '123', '1001', null, '123', '2019-01-18 00:00:00', null, '2019-01-02 14:43:49');
+INSERT INTO `sys_book` VALUES ('1081820615051821058', 'san', '123', '1001', null, '31232', '2019-01-19 00:00:00', null, '2019-01-06 07:51:49');
 INSERT INTO `sys_book` VALUES ('1109342918657363969', '测试', '123', '1002', '1', null, '2019-03-06 00:00:00', '2019-03-24 00:00:00', '2019-03-23 06:35:37');
 
 -- ----------------------------
@@ -3600,8 +3600,8 @@ CREATE TABLE `sys_config` (
 -- Records of sys_config
 -- ----------------------------
 INSERT INTO `sys_config` VALUES ('993021975142113283', 'sysMgtLoginPageHtml', 'login.html', '1', '管理系统登录页html文件名');
-INSERT INTO `sys_config` VALUES ('993030261291655170', 'sysMgtIndexPageTitle', '浪漫婚纱摄影', '1', '管理系统首页标题(系统名称)');
-INSERT INTO `sys_config` VALUES ('993030513423851523', 'sysMgtLoginPageTitle', '浪漫婚纱摄影', '1', '管理系统登录页标题');
+INSERT INTO `sys_config` VALUES ('993030261291655170', 'sysMgtIndexPageTitle', 'XXX民宿后台管理系统', '1', '管理系统首页标题(系统名称)');
+INSERT INTO `sys_config` VALUES ('993030513423851523', 'sysMgtLoginPageTitle', 'XXX民宿后台管理系统', '1', '管理系统登录页标题');
 
 -- ----------------------------
 -- Table structure for sys_dept
@@ -3628,9 +3628,9 @@ CREATE TABLE `sys_dept` (
 -- ----------------------------
 -- Records of sys_dept
 -- ----------------------------
-INSERT INTO `sys_dept` VALUES ('1078904943566946305', '123123', '988141569170239490', '工作室摄影部', '3', '0', '0', '摄影部', null, null);
-INSERT INTO `sys_dept` VALUES ('988141569170239490', null, '0', 'XXX婚纱摄影工作室', '1', '0', '1', '工作室', null, '2');
-INSERT INTO `sys_dept` VALUES ('988144781986131970', '320200', '988141569170239490', '工作室管理部', '1', '0', '0', '管理部', '无锡市', '3');
+INSERT INTO `sys_dept` VALUES ('1078904943566946305', '123123', '988141569170239490', '后台管理员', '3', '0', '0', '摄影部', null, null);
+INSERT INTO `sys_dept` VALUES ('988141569170239490', null, '0', '民宿网站', '1', '0', '1', '工作室', null, '2');
+INSERT INTO `sys_dept` VALUES ('988144781986131970', '320200', '988141569170239490', '前台', '1', '0', '0', '管理部', '无锡市', '3');
 
 -- ----------------------------
 -- Table structure for sys_home
@@ -3659,8 +3659,8 @@ CREATE TABLE `sys_home` (
 -- ----------------------------
 -- Records of sys_home
 -- ----------------------------
-INSERT INTO `sys_home` VALUES ('1078915276931153922', '婚纱风格种类', 'kinds', '0', '1001', '浪漫土耳其', '1', null, '0', '1', null, '1', null, '2018-12-29 15:26:48');
-INSERT INTO `sys_home` VALUES ('1081820836691427329', '婚纱风格种类', 'kinds', '0', '1002', '三亚', '2', null, '0', '1', null, '1', null, '2019-01-06 15:52:27');
+INSERT INTO `sys_home` VALUES ('1078915276931153922', '婚纱风格种类', 'kinds', '0', '1001', '大床房', '1', null, '0', '1', null, '1', null, '2018-12-29 15:26:48');
+INSERT INTO `sys_home` VALUES ('1081820836691427329', '婚纱风格种类', 'kinds', '0', '1002', '单人间', '2', null, '0', '1', null, '1', null, '2019-01-06 15:52:27');
 
 -- ----------------------------
 -- Table structure for sys_log
@@ -3790,7 +3790,7 @@ CREATE TABLE `sys_user` (
 -- Records of sys_user
 -- ----------------------------
 INSERT INTO `sys_user` VALUES ('1', 'admin', '5f9c50b9d370e553b076ecf20870baab6dff1d061fb15868b62ca17f04b70a16', '123402004556', 'YzcmCZNvbXocrsz9dm8e', 'root@qq.com', '13912345678', '1', '1', '988144781986131970', '2018-02-24 11:11:11', '超级管理员', null, '1');
-INSERT INTO `sys_user` VALUES ('1078919933074132994', 'test', 'ba249d20c302baec2265d77204f37c289badb16759152e38eb0c1bb71118f0d5', '12345', 'pds919JwZ10xJvIce5oT', '1@123', null, '1', '1', '1078904943566946305', '2018-12-29 07:45:32', '测试用户', '摄影师', '0');
+INSERT INTO `sys_user` VALUES ('1078919933074132994', 'test', 'ba249d20c302baec2265d77204f37c289badb16759152e38eb0c1bb71118f0d5', '12345', 'pds919JwZ10xJvIce5oT', '1@123', null, '1', '1', '1078904943566946305', '2018-12-29 07:45:32', '测试用户', '管理员', '0');
 
 -- ----------------------------
 -- Table structure for sys_user_role
