@@ -7,7 +7,7 @@
 <body>
 <div id="rrapp" v-cloak>
     <el-form :inline="true" :model="formInline" class="demo-form-inline" ref="formInline">
-        <el-form-item label="名称" prop="value">
+        <el-form-item label="房间名称" prop="value">
             <el-input  type="text" v-model="formInline.value" auto-complete="off" placeholder="名称"></el-input>
         </el-form-item>
         <el-form-item label="状态" prop="status">
@@ -74,13 +74,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>字典注销原因</td>
+                    <td>注销原因</td>
                     <td colspan="2" style="text-align: left;">
                         <el-input  type="text"  v-model="dict.delReason" placeholder="字典注销原因"></el-input>
                     </td>
                 </tr>
                 <tr>
-                    <td>字典注销时间</td>
+                    <td>注销时间</td>
                     <td colspan="2" style="text-align: left;">
                         <el-date-picker type="date" format="yyyy-MM-dd" value-format="yyyy-MM-dd"   v-model="dict.delTime" placeholder="注销时间"></el-date-picker>
                     </td>
@@ -93,7 +93,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>字典登记时间</td>
+                    <td>登记时间</td>
                     <td colspan="2" style="text-align: left;">
                         <el-input  type="text"  v-model="dict.addTime" placeholder="字典登记时间"></el-input>
                     </td>

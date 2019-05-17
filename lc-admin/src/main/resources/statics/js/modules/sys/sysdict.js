@@ -6,9 +6,9 @@ $(function () {
         url: baseURL + 'sys/sysdict/list',
         datatype: "json",
         colModel: [			
-			{ label: '字典名称', name: 'value', index: 'value', width: 80  },
-			{ label: '字典类型', name: 'type', index: 'type', width: 80 }, 			
-			{ label: '字典码', name: 'code', index: 'code', width: 80 },
+			{ label: '房间的值', name: 'value', index: 'value', width: 80  },
+			{ label: '房间类型', name: 'type', index: 'type', width: 80 },
+			{ label: '房间编码', name: 'code', index: 'code', width: 80 },
 			{ label: '排序', name: 'orderNum', index: 'order_num', width: 80 },
 			{ label: '备注', name: 'remark', index: 'remark', width: 80 }
 		],
@@ -37,7 +37,7 @@ $(function () {
         	$("#jqGrid").closest(".ui-jqgrid-bdiv").css({ "overflow-x" : "hidden" }); 
         },
         ondblClickRow : function (rowid) {
-            vm.title="查看字典信息";
+            vm.title="查看信息";
             vm.dialogFormVisible= true;
             vm.getInfo(rowid);
         },
@@ -102,11 +102,11 @@ var vm = new Vue({
         },
 		saveOrUpdate: function (event) {
             if(vm.dict.code==null||vm.dict.code==""){
-                this.validateForm("请设置字典码");
+                this.validateForm("请设置房间编码");
                 return;
             }
             if(vm.dict.value==null||vm.dict.value==""){
-                this.validateForm("请设置字典值");
+                this.validateForm("请设置房间的值");
                 return;
             }
             if(vm.dict.orderNum==null||vm.dict.orderNum==""){
